@@ -1,0 +1,14 @@
+{
+  "name": "srcheckerv0.9.6",
+  "version": "1.0.0",
+  "description": "Checks all tabs and closes those with less than a specified number of search results.",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify src/background.js -o dist/background.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^17.0.0"
+  }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SR Checker Settings</title>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Kanit', sans-serif;
+      width: 250px;
+      padding: 10px;
+      background-color: #e6f7e6;
+      color: #333;
+    }
+    h1 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #3d9970;
+    }
+    label {
+      font-size: 14px;
+    }
+    input {
+      width: calc(100% - 20px);
+      padding: 5px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    button {
+      width: calc(100% - 20px);
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background-color: #77dd77;
+      border: none;
+      border-radius: 12px;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 4px #6cb56c;
+    }
+    button:active {
+      box-shadow: 0 2px #6cb56c;
+      transform: translateY(2px);
+    }
+    .message {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #3d9970;
+      text-align: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Settings</h1>
+  <label for="minResults">Minimum Results:</label>
+  <input type="number" id="minResults" min="1" />
+  <button id="save">บันทึก</button>
+  <button id="start">เริ่ม</button>
+  <div id="message" class="message"></div>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "SRchecker v1.7.6",
+  "version": "1.7.6",
+  "description": "Checks all tabs and closes those with less than a specified number of search results.",
+  "background": {
+    "service_worker": "dist/background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage",
+    "contextMenus",
+    "scripting"
+  ],
+  "host_permissions": [
+    "*://*.google.com/*"
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
